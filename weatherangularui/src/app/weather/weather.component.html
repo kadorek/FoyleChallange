@@ -1,0 +1,24 @@
+<div>
+  <label for="slcCity">Şehir </label>
+  <select [ngModel]="selectedCity" (ngModelChange)="slcChange($event)" name="slcCity">
+    <option value="-1">Şehir Seçiniz</option>
+    <option *ngFor="let c of cities" [value]="c.plaka">{{c.name}}</option>
+  </select>
+</div>
+
+<div *ngIf="selectedCity>0">
+  <div>
+    {{weatherData.name}} şehrinde şuan hava {{weatherData.main.temp}} derecedir.
+  </div>
+  <div>
+    {{weatherData.name}} şehrinde şuan nem {{weatherData.main.humidity}} %.
+  </div>
+  <div>
+    {{weatherData.name}} şehrinde şuan rüzgar hızı {{weatherData.wind.speed}} km/s.
+  </div>
+
+</div>
+
+<div>
+  <a routerLink="/">Home</a>
+</div>

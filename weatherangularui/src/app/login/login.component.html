@@ -1,0 +1,23 @@
+
+
+<form class="form" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+  <div>
+    <h3>Login Alanı</h3>
+    <div *ngIf="!isLogged" class="alert alert-danger">
+      Yanlış kullanıcı adı ve şifre
+    </div>
+    <br />
+    <label for="username">Kullanıcı Adı</label>
+    <input type="text" id="username" name="username" ngModel required autofocus />
+    <br />
+    <label for="password">Şifre</label>
+    <input type="password" id="password" name="password" ngModel required />
+
+    <br />
+
+    <button type="submit">Gönder</button>
+
+  </div>
+
+
+</form>

@@ -1,0 +1,21 @@
+<h2>Main Page</h2>
+
+
+<br />
+<div *ngIf="isUserLoggedIn()">
+  <h4>Giriş başarılı</h4>
+
+</div>
+<ul>
+  <li *ngIf="!isUserLoggedIn()">
+    <a routerLink="/login">Login</a>
+  </li>
+
+  <li *ngIf="isUserLoggedIn()">
+    <a routerLink="/weather">Get Weather</a>
+  </li>
+
+  <li *ngIf="isUserLoggedIn()">
+    <a (click)="logOut()">Logout</a>
+  </li>
+</ul>

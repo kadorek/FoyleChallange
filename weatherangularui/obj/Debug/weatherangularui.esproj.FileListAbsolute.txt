@@ -1,0 +1,2 @@
+D:\GitRepos\FoyleSoft\weatherangularui\obj\Debug\weatherangularui.esproj.SuggestedBindingRedirects.cache
+D:\GitRepos\FoyleSoft\weatherangularui\obj\Debug\weatherangularui.esproj.CoreCompileInputs.cache
