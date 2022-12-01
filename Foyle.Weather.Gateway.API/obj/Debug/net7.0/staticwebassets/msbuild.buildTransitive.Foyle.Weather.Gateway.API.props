@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Foyle.Weather.Gateway.API.props" />
+</Project>
